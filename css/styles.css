@@ -557,6 +557,7 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: 999;
   background-color: rgba(46, 47, 66, 0.4);
   opacity: 0;
   visibility: hidden;
@@ -626,4 +627,44 @@ img {
   letter-spacing: 0.02em;
   padding: 72px 24px 16px;
   text-align: center;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.form-wrapper-container {
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 8px;
+}
+
+.modal-form-lable {
+}
+
+.input-wrapper-container {
+  position: relative;
+}
+
+.modal-input {
+  width: 100%;
+  height: 40px;
+  padding-left: 38px;
+  border: 1px solid #2e2f42;
+  border-radius: 4px;
+  outline: none;
+  transition: border 250ms linear;
+}
+
+.modal-input:focus {
+  border-color: #4d5ae5;
+}
+
+.modal-icon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+}
+
+.modal-input:focus + .modal-icon {
+  fill: #4d5ae5;
 }
